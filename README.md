@@ -21,7 +21,7 @@ For the exact tested Linux CPU dependencies, install the Torch version in [the l
 
 ## Train, evaluate and continue
 
-Stage 1 learns on small generated rectangles. Stage 6 mixes the fixed fields shipped here with newly generated A–D fields, including concave fields and holes. Stage 7 also samples different robots. Each command below is a separate example.
+Stage 1 learns on small generated rectangles. Stage 6 mixes the training split of the 12,800-field dataset shipped here with newly generated A–D fields, including concave fields and holes. Stage 7 also samples different robots. Each command below is a separate example.
 
 ```bash
 python train.py --stage 6 --workers 4 --steps 100000 --interval 25000 --out runs/mixed
@@ -43,6 +43,10 @@ The two versions use different observation and action contracts. Use the version
 
 ## Datasets
 
-[data/fields.json](data/fields.json) contains **eight project-generated polygons**, one training and one validation geometry per family. A is convex, B is concave, C has a convex exterior with an obstacle, and D has a concave exterior with multiple obstacles. Coordinates are in local metres. Original WKB, IDs, areas, hole counts, geometry hashes, generation seeds and split membership are preserved. The two packaging changes to the Kaggle file are the loader key `fields` and split spelling `val`. Its upstream SHA-256 is recorded in the file. The fixed set is intended for reproducible workloads. The procedural curriculum supplies further fields during training. There is no independent test cohort in the eight-field dataset.
+[data/fields.json](data/fields.json) contains **12,800 synthetic metric field polygons** used by the default launcher. Each family contributes 2,560 training, 320 validation and 320 held-out test fields. In total there are **10,240 training, 1,280 validation and 1,280 test fields**. Family A has a convex exterior, B a concave exterior, C a convex exterior with holes, and D a concave exterior with holes. Each record includes polygon WKB, ID, geometry hash, split, area and obstacle count. All splits use the same procedural shape generators. The test split measures transfer to other generated examples within those shape families.
+
+The original eight fields retain their IDs, geometry and training or validation assignments. To resume a run bound to the original dataset hash, pass `--data data/smoke8/fields.json`. For new mixed-field runs use `--stage 6`. Stage 1 generates small rectangles independently of the manifest. The training budget counts environment steps, so a larger field pool does not require visiting every field in one training run.
+
+Run `python verify_data.py` to check geometry, family classification, unique IDs and hashes, split counts, and the original eight records. To regenerate with the pinned dependencies, run `python generate_fields.py` and compare the resulting checksum with the committed [checksum](data/checksums.json). Generation uses seed 20261127 and separate random streams per family and split.
 
 The 94-field real EU dataset comes from Planet Labs’ proprietary `planet_afb` product. Its recorded permission covers local use. External hosting and redistribution to teammates have not been established. A collaborator who already has an authorized copy of the corrected field package can keep it outside Git and pass `--data /path/to/fields/real_fields_splits.json` on both training and resume. Keep its checksums, metadata and splits together. The registered split is 47 training, 17 validation, 18 test and 12 historical evaluation fields. Training samples the training split. Conventional planners and expert trajectories are outside this package.
