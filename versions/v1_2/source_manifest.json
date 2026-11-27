@@ -1,0 +1,23 @@
+{
+  "source_commit": "a867bfbbdba2299cb1ba695b52fe7bb81d548b03",
+  "files": {
+    "legacy_models.json": "cdb4588be10426552ccff03fe6b8b96738a0454bd26625185693a9bdfd33ae49",
+    "session.py": "83149673ae23403c1731761e746bf5d94d513efff4ce9ea03d1f779c5107c51c",
+    "train.py": "d7878ae15d52f1ab48e39a7576ed6f8e1e121cf8c9ec777bdad7195004a332e9",
+    "versions/v1_2/ppo_coverage_planning_v1/__init__.py": "4d3fdb1b128055f240f40fc800ac9847537ea6fa3e8da08d2e547d075c0aff58",
+    "versions/v1_2/ppo_coverage_planning_v1/config.py": "d0a9f60e0680b0338adaa65dba1b005f5e6406bc865e817e001088ba39a84390",
+    "versions/v1_2/ppo_coverage_planning_v1/coverage_map.py": "f8408094c9e5a574d1938359c4601bb684ee3550abf88eb35a4fe1a809ea7f30",
+    "versions/v1_2/ppo_coverage_planning_v1/curriculum.py": "02511e6cf2a5eb1f3b25e5240a00cb4ae4a46949f975ecdb3eb59fdbe0866495",
+    "versions/v1_2/ppo_coverage_planning_v1/datasets.py": "c690631ba8bc1ecb0e8c640429930b536e75d684316c67aea7f27197adc1a6f2",
+    "versions/v1_2/ppo_coverage_planning_v1/dynamics.py": "141ed8e5bbe4f7bb424155e3e9ec8e3f6446da3e8b6f616f97cceb05ccde72ad",
+    "versions/v1_2/ppo_coverage_planning_v1/env.py": "fd2277d830260f2aadcf6c2997592f32338d98b0ec179acba388fe742daf851b",
+    "versions/v1_2/ppo_coverage_planning_v1/evaluate_cli.py": "4ffb1eb0c5713f46f4d606e7192b25f680e02c8b6d58b8b5b84d1e7985fd5a2f",
+    "versions/v1_2/ppo_coverage_planning_v1/evaluator.py": "941d44a651b585b5b68b27d285b9eb7ca77636db54e4b242cc6d3014bdb3aec3",
+    "versions/v1_2/ppo_coverage_planning_v1/field_world.py": "d3f7454c589deeb2889ab55e430ab0356b02a12bec060ec00e20fed9755510b2",
+    "versions/v1_2/ppo_coverage_planning_v1/networks.py": "828aae30441dbaf36452c361b807d4015c079d680861308299ff24097f5ea98b",
+    "versions/v1_2/ppo_coverage_planning_v1/rewards.py": "6c2e8ecddf3de995c78235e85e48f84fe5fb9c357cab23ab76ca1e6297b7cb06",
+    "versions/v1_2/ppo_coverage_planning_v1/robot_specs.py": "0df55cd5cd04aaa5296724ca7542a4d8343f5c8b815cca3f090694a141c091b2",
+    "versions/v1_2/ppo_coverage_planning_v1/train_cli.py": "9a02a945126ab641818bfb31a51014a8685c3fad3d1251852b7bff2d9b8ff08a",
+    "versions/v1_2/ppo_coverage_planning_v1/trainer.py": "24e2ca45c7fab865e499210dc97740b64823fd268bff480b678178f5a5a427d8"
+  }
+}

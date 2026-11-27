@@ -1,0 +1,127 @@
+{
+  "fields": [
+    {
+      "area_m2": 648.866,
+      "family": "A",
+      "field_id": "procedural-A-412",
+      "geom_sha256": "6d52127c9e61e30d9d6b0b41a7cb5f3edff44ad71637c95659b6fa677b68c09a",
+      "metadata": {
+        "angle_deg": 29.18,
+        "height_m": 23.0,
+        "kind": "rectangle",
+        "width_m": 28.21
+      },
+      "obstacle_count": 0,
+      "source": "synthetic",
+      "split": "train",
+      "wkb_hex": "010300000001000000050000009c8211df09d31ac0338ad0fb2ceb30c0048b663c18ec3140b58a544a314e09c09c8211df09d31a40338ad0fb2ceb3040048b663c18ec31c0b78a544a314e09409c8211df09d31ac0338ad0fb2ceb30c0"
+    },
+    {
+      "area_m2": 628.621,
+      "family": "A",
+      "field_id": "procedural-A-20412",
+      "geom_sha256": "3abc41a3c49fbbb0babef9c2275de6dcb2448eaec2ac773332ab19d31f25c9b5",
+      "metadata": {
+        "angle_deg": 179.05,
+        "height_m": 24.47,
+        "kind": "rectangle",
+        "width_m": 25.69
+      },
+      "obstacle_count": 0,
+      "source": "synthetic",
+      "split": "val",
+      "wkb_hex": "01030000000100000005000000453c2ed3b2162a4063ad2b9f340b28406f19e28ac44729c00518a5a06ce42840453c2ed3b2162ac063ad2b9f340b28c06f19e28ac44729400518a5a06ce428c0453c2ed3b2162a4063ad2b9f340b2840"
+    },
+    {
+      "area_m2": 1895.352,
+      "family": "B",
+      "field_id": "procedural-B-412",
+      "geom_sha256": "f29ffc8ab45ac6880ad013345120ea0864a20da8b4e42760157d63d6d8718988",
+      "metadata": {
+        "kind": "synthetic_nonconvex_L"
+      },
+      "obstacle_count": 0,
+      "source": "synthetic",
+      "split": "train",
+      "wkb_hex": "01030000000100000007000000dc220ee17a713bc0060524afd87427c0754c4cc0d21733407b2130caba673cc00d680425f3a53b40ec3a7d0e212112c0263cae3123b82740a0e07e58f502f23f191cf30ada7c324000b0a3d3fa9e33407b127414248528c034921aadd1a33e40dc220ee17a713bc0060524afd87427c0"
+    },
+    {
+      "area_m2": 1626.121,
+      "family": "B",
+      "field_id": "procedural-B-20412",
+      "geom_sha256": "5c6ed7327c3504590ec1341bda34bb60e7e519717ba40855d06be04b2723806c",
+      "metadata": {
+        "kind": "synthetic_nonconvex_U"
+      },
+      "obstacle_count": 0,
+      "source": "synthetic",
+      "split": "val",
+      "wkb_hex": "01030000000100000009000000f1ac276f30fa3d4068b8859959df1740c02e35ce7c94fdbf9ef7e4d478823e40224b53f7a84f40c03ea85eebe9cb22c0d3b37e4e248935c00b9608a484f231c010e8cdca4693f8bf6c9529298df41f40f6b81c1ed13b2040c0f52b0f0774e13faef186a50ec427c0b89bd9b5076439c0e0cc7253367be9bfd26e19b24bf840c0f1ac276f30fa3d4068b8859959df1740"
+    },
+    {
+      "area_m2": 8299.956,
+      "family": "C",
+      "field_id": "procedural-C-412",
+      "geom_sha256": "aa0fb4644852b2750006e7f9e6e721cc962a968bc4cfa604220bceaf2c96cfce",
+      "metadata": {
+        "kind": "synthetic_family_C",
+        "n_obstacles": 1
+      },
+      "obstacle_count": 1,
+      "source": "synthetic",
+      "split": "train",
+      "wkb_hex": "010300000002000000050000009075323058cb36c0bc8941c78f864ec05f04157c2cd54f40a840890bed8529c026fc37cd3384364078dc1fd0e3744e40154192adbef84fc0988b022f3d3f29409075323058cb36c0bc8941c78f864ec005000000d6753888832737c0de1fecf4557a2dc06081ae1a3d6b30c0c00cd8d1b1992bc0066f865f879331c0115a118dfcfb15c07c6310cdcd4f38c04b8039d344bd19c0d6753888832737c0de1fecf4557a2dc0"
+    },
+    {
+      "area_m2": 8510.644,
+      "family": "C",
+      "field_id": "procedural-C-20412",
+      "geom_sha256": "4b1698338c8d8e0cd6b1ce0319530be1e7ab5a254ebb3dab1ee82983b99e1acb",
+      "metadata": {
+        "kind": "synthetic_family_C",
+        "n_obstacles": 1
+      },
+      "obstacle_count": 1,
+      "source": "synthetic",
+      "split": "val",
+      "wkb_hex": "01030000000200000005000000159d0d69101d4740b655a5351c2f4740efb0930c923146c064948125b2ee47403d04051953f946c0e072559d744e47c0c7499c5c4f5546408eb1318d0a0e48c0159d0d69101d4740b655a5351c2f474005000000b3788c396e0c344040d7a167235b38c048adc1f6a48c3a405e9f62b6a25337c0210821c3e84b39407afd76c8e9d32ec08bd3eb05b2cb32409fb67a95757130c0b3788c396e0c344040d7a167235b38c0"
+    },
+    {
+      "area_m2": 7888.036,
+      "family": "D",
+      "field_id": "procedural-D-412",
+      "geom_sha256": "89f4808a9201b7b6e92849ac699afef02ff934c8c58d7efd58c06b68d163f4ca",
+      "metadata": {
+        "kind": "synthetic_family_D",
+        "n_obstacles": 3
+      },
+      "obstacle_count": 3,
+      "source": "synthetic",
+      "split": "train",
+      "wkb_hex": "01030000000400000007000000939eb23d7dd34bc0d55f9235109d39c037a609ac66c94240dcaf707edb824dc04dc28a7d02d14b406d8d43d0ad4121c08234c072f70038407ce5d7d2dca605400bf0413362ff424014d9dd93dadf444066599fe4f59937c052f746b654e94f40939eb23d7dd34bc0d55f9235109d39c0050000008b1f84cce10b30401ce3318fac6137c05f397ca5c8ea32408b4ceb20df492fc0a39d0a2e25702a40ff2daffb6f0f2bc0f9691a7c57b22440d6d393fc744435c08b1f84cce10b30401ce3318fac6137c005000000f78f2d38496f1d40dbc1cc5668423740002f32c6c42129409ec12562c70c3840fe08714ceee02640719b44e3a7783f40f343ab449ced1840ad9bebd748ae3e40f78f2d38496f1d40dbc1cc5668423740050000007e099a972ebb2dc0d5d5c9cc619535c05929c03685d629c09770742c170d2dc04a23aa7693d631c0174f7ed171562ac05c131727e8c833c015c54e1f0f3a34c07e099a972ebb2dc0d5d5c9cc619535c0"
+    },
+    {
+      "area_m2": 7119.487,
+      "family": "D",
+      "field_id": "procedural-D-20412",
+      "geom_sha256": "1e3c10f94acdd2f24cb524d31ad28b93d7f2c6c95103f36655fd0768bad045ba",
+      "metadata": {
+        "kind": "synthetic_family_D",
+        "n_obstacles": 3
+      },
+      "obstacle_count": 3,
+      "source": "synthetic",
+      "split": "val",
+      "wkb_hex": "010300000004000000090000007e107e7461d74f40b06490c905642140261f0a886f2b20c09b28e65453025040c8952c1ed84551c07460562a19282ec01a21ca6ce62246c0eafa5c6eb11b41c00c78809a8a7f12c020b065b643333140b1e824c870813140fca16559eb52c13f7b3bcf6a792436c0586d365e00a449c087cb76a2d168054014e8fec0d59a51c07e107e7461d74f40b06490c905642140050000009dbf27704db6174073ac654ed1af3c408a1154a2507e264095ad7130d8b53d404dcf3515286c244057250fc4a48b4140243beb55fc911340c5240953a10841409dbf27704db6174073ac654ed1af3c400500000007d1226daafa3e40d6e460ec77642a402b9783b6cc093f4014475cb6bb693340515d690ae7a238403c491c62517933402d9708c1c493384026e9e043a3832a4007d1226daafa3e40d6e460ec77642a400500000065508527d4b139c0746de213dd562440f33fcb83498b3ec03e8cab80593f2b403182d15bc5bc41c0347901e5fbcd1a40d2145d5b15a03ec04077de1606fa094065508527d4b139c0746de213dd562440"
+    }
+  ],
+  "generation_seeds": {
+    "train": 412,
+    "validation": 20412
+  },
+  "purpose": "Procedural timing workloads for A/B/C/D. Fixed training and validation geometries.",
+  "simulator_commit": "8e7f4759d35f24f9bb4b8728a3f5573fa41ef585",
+  "units": "metres in local Cartesian coordinates",
+  "upstream_file_sha256": "41fc93da1e342aba5c087a9189b7751ecbf4c240592bc08135aa012d2067ff3b",
+  "version": "synthetic-ppo-performance-v1"
+}

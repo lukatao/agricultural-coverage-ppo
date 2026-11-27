@@ -1,0 +1,14 @@
+{
+  "c1a184b1376de5a25ea867591d4c2403611ac519c143b8ef3e8fff5c4c0b9a2c": {
+    "tag": "latest",
+    "source_run": "pilot_stage2_from_stage1",
+    "vecnormalize_sha256": "37605c48c1767d4838b8b591d9873e5585a2333878a93154670a8fe927fdc579",
+    "contract_sha256": "eb33fac344fdccab70f476e576fd67375f30a7b9b025afdffb458d58c4f16ffd"
+  },
+  "ff3b57027ac350e4f23e1c4d40ae2a9bc9a9cfd73fd1770c42353fb53c929257": {
+    "tag": "best",
+    "source_run": "pilot_stage2_from_stage1",
+    "vecnormalize_sha256": "aed67534c0f479e657a53cdcda2d991638e837e270f599c4c7c97ed00fcf3592",
+    "contract_sha256": "169c6b83cf34d27e74a0091e4e4bfedf7336c88301e35d7ea6bc7048df72a389"
+  }
+}
