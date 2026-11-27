@@ -2,6 +2,8 @@
 
 Train a single agricultural robot to cover a field through interaction with a physically constrained Gymnasium environment. Stable-Baselines3 PPO uses local and global maps, vehicle state and obstacle observations. The four robot configurations and procedural curriculum are bundled. The simulator counts treatment over executed motion and distinguishes vehicle-body clearance from the effective agricultural working width.
 
+**New to the project?** Follow the [step-by-step training guide](docs/TRAINING_GUIDE.md) to install the package, train and evaluate a first policy, resume a checkpoint, or prepare the real EU field cohort.
+
 ## Quick start on Linux
 
 Use Python 3.12 and a C++17 compiler (g++ for the accelerated backend). Run from the repository root.
@@ -59,3 +61,5 @@ echo '9275e8b3817db07bb3c96fa72f607bb7  field_boundaries.parquet' | md5sum -c -
 ```
 
 The repository's 12,800 synthetic fields are ready for PPO training. The full download contains source polygons in geographic coordinates. Our A–D classification, local metric projections and PPO splits are downstream preparation steps. The trainer expects a metric JSON field manifest and checksums. For the existing 94-field prepared package, use `--data /path/to/fields/real_fields_splits.json` on training and resume. Its split is 47 training, 17 validation, 18 test and 12 historical evaluation fields.
+
+To build the registered real-field manifest directly from the full download, follow [the EU preparation walkthrough](docs/TRAINING_GUIDE.md#5-download-real-fields-and-make-a-training-manifest).
