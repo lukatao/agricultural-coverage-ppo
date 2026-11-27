@@ -49,4 +49,13 @@ The original eight fields retain their IDs, geometry and training or validation 
 
 Run `python verify_data.py` to check geometry, family classification, unique IDs and hashes, split counts, and the original eight records. To regenerate with the pinned dependencies, run `python generate_fields.py` and compare the resulting checksum with the committed [checksum](data/checksums.json). Generation uses seed 20261127 and separate random streams per family and split.
 
-The 94-field real EU dataset comes from Planet Labs’ proprietary `planet_afb` product. Its recorded permission covers local use. External hosting and redistribution to teammates have not been established. A collaborator who already has an authorized copy of the corrected field package can keep it outside Git and pass `--data /path/to/fields/real_fields_splits.json` on both training and resume. Keep its checksums, metadata and splits together. The registered split is 47 training, 17 validation, 18 test and 12 historical evaluation fields. Training samples the training split. Conventional planners and expert trajectories are outside this package.
+### Full real EU field dataset
+
+Planet and Sinergise published the original European field boundaries as a GeoParquet file containing 51,398,853 records (15.5 GB). Download it from [Zenodo](https://zenodo.org/records/14229033) or [Source Cooperative](https://source.coop/planet/eu-field-boundaries/field_boundaries.parquet). The [publisher's README](https://data.source.coop/planet/eu-field-boundaries/README.md) specifies [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Credit the authors, link the license and identify changes when sharing adapted data.
+
+```bash
+curl -fL --retry 3 -C - -o field_boundaries.parquet 'https://zenodo.org/records/14229033/files/field_boundaries.parquet?download=1'
+echo '9275e8b3817db07bb3c96fa72f607bb7  field_boundaries.parquet' | md5sum -c -
+```
+
+The repository's 12,800 synthetic fields are ready for PPO training. The full download contains source polygons in geographic coordinates. Our A–D classification, local metric projections and PPO splits are downstream preparation steps. The trainer expects a metric JSON field manifest and checksums. For the existing 94-field prepared package, use `--data /path/to/fields/real_fields_splits.json` on training and resume. Its split is 47 training, 17 validation, 18 test and 12 historical evaluation fields.
